@@ -1,0 +1,9 @@
+extends layout 
+block content 
+  h1 Login
+  form(action="/users/login", method="post") 
+    label(for="username") Username: 
+    input#username(type="text", name="username", required, placeholder="James Doe")
+    label(for="password") Password: 
+    input#password(type="password", name="password", required, placeholder="make sure its safe") 
+    button.btn(type="submit") Submit

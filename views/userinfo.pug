@@ -1,0 +1,15 @@
+extends layout 
+block content 
+  h1 User info 
+  table 
+    tr
+      th ID 
+      th username 
+      th password 
+   
+    tr
+      td= user["_id"]
+      td= user["username"]
+      td= user["password"]
+  form(action="/users/logout", method="post")
+    button.btn(type="submit") Log out 
